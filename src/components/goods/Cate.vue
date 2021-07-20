@@ -160,7 +160,7 @@ export default {
       }
       this.catelist = res.data.result
       this.total = res.data.total
-      console.log(res)
+      
     },
     async handleSizeChange(newsize) {
       this.queryInfo.pagesize = newsize
@@ -185,11 +185,11 @@ export default {
         return this.$message.error('获取父级分类数据失败')
       }
 
-      console.log(res.data)
+      
       this.parentCateList = res.data
     },
     parentCateChanged() {
-        console.log(this.selectedKeys)
+        
         if (this.selectedKeys.length > 0) {
             this.addCateForm.cat_pid = this.selectedKeys[this.selectedKeys.length - 1]
             this.addCateForm.level = this.selectedKeys.length

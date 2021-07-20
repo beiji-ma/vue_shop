@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import {
+    Alert,
     Aside, 
     Breadcrumb,
     BreadcrumbItem, 
@@ -26,12 +27,15 @@ import {
     Submenu, 
     Switch, 
     Table, 
-    TableColumn, 
+    TableColumn,
+    TabPane,
+    Tabs,
     Tag,
     Tree,
     Tooltip
 } from 'element-ui'
 
+Vue.use(Alert)
 Vue.use(Aside)
 Vue.use(Breadcrumb)
 Vue.use(BreadcrumbItem)
@@ -57,6 +61,8 @@ Vue.use(Submenu)
 Vue.use(Switch)
 Vue.use(Table)
 Vue.use(TableColumn)
+Vue.use(TabPane)
+Vue.use(Tabs)
 Vue.use(Tag)
 Vue.use(Tooltip)
 Vue.use(Tree)

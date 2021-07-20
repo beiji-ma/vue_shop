@@ -52,7 +52,7 @@ export default {
                 if (res.meta.status !== 200) return this.$message.error("failed to login")
                 this.$message.success('login success')
                 // save token into sessionStorage
-                console.log(res)
+                
                 window.sessionStorage.setItem('token', res.data.token)
                 this.$router.push('/home')
             })
